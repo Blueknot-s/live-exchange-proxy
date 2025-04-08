@@ -1,5 +1,6 @@
 export default async function handler(req, res) {
   const { base = "KRW", symbols = "USD" } = req.query;
+
   const url = `https://api.exchangerate.host/latest?base=${base}&symbols=${symbols}`;
 
   try {
